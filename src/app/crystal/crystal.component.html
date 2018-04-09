@@ -1,0 +1,36 @@
+<p>
+  crystal works!
+</p>
+<div>
+  <h1>
+    {{title}}
+  </h1>
+  <div>
+    <div class="dashboard">
+  	<button class="dashboard__regererate" id="regenerate">Regenerate</button> <label for="noOfPoints">Points</label>
+  	<input type="range" id="noOfPoints" min="11" max="300" step="2" value="100"  />
+  <label for="polygonEdges">Edges</label>
+  	<input type="range" id="polygonEdges" min="4" max="20" step="1" value="10"  />
+  	<label for="showCircle">Show Circle</label><input type="checkbox"  id="showCircle" />
+
+  	<label for="edgeWidth">Edge width</label>
+  	<input type="range" id="edgeWidth" min="0" max="4" step="1" value="1"  />
+  	<label for="ctrlSpeed" title="Speed">Animate</label><input type="checkbox"  id="doAnimate" title="Animate?" />
+  	<input type="range" id="ctrlSpeed" min="1" max="6" step=".2" value="2" title="Speed"  />
+  	<input type="checkbox" id="colorfull" />
+  		<button id="getSVG">Get SVG</button>
+  </div>
+  <svg width="3000" height="3000">
+  	<text x="0" y="50px">Generated using Pen on CodePen (https://codepen.io/netsi1964/full/PZJEQe/) which was made by Sten Hougaard, Jan. 2016,  @netsi1964</text>
+  		<rect id="bg" x="0" y="0" width="1478.86" height="522.414" style="fill:rgb(0,0,0);"/>
+  	<g id="main">
+
+  	<g id="polygons"></g>
+  	<g id="points"></g>
+  	</g>
+
+  </svg>
+
+  </div>
+
+</div>

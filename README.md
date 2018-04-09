@@ -26,3 +26,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+https://codepen.io/netsi1964/full/PZJEQe/
+
+https://codepen.io/netsi1964/pen/PZJEQe
+
+https://www.google.com/search?q=javascript+random+svg+polygon+generation&oq=javascript+random+svg+polygon+generation+&aqs=chrome..69i57.22331j1j8&sourceid=chrome&ie=UTF-8
