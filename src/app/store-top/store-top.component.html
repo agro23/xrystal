@@ -1,0 +1,44 @@
+<div class="container well">
+  <div class="well">
+
+
+    <!-- Carousel Wrapper-->
+    <!-- <mdb-carousel [isControls]="true" [animation]="'slide'"> -->
+      <!-- <mdb-carousel [isControls]="true"> -->
+
+        <!--First slide-->
+        <!-- <mdb-slide>
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+        </mdb-slide> -->
+        <!--/First slide-->
+        <!--Second slide-->
+        <!-- <mdb-slide>
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+        </mdb-slide> -->
+        <!--/Second slide-->
+        <!--Third slide-->
+        <!-- <mdb-slide>
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+        </mdb-slide> -->
+        <!--/Third slide-->
+    <!-- </mdb-carousel> -->
+    <!--/.Carousel Wrapper -->
+
+
+    <div class="fixed-sn">
+        <div class="col-lg-10 ml-auto mr-auto">
+            <mdb-carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex" (activeSlideChange)="activeSlideChange()">
+              <mdb-slide *ngFor="let slide of slides; let index=index">
+                <img [src]="slide.image">
+                <!-- <div class="carousel-caption">
+                  <h4>Slide {{index}}</h4>
+                  <p>{{slide.text}}</p>
+                </div> --><br>
+                <button (click)="purchaseXrystal(slide.id)" class="btn btn-info btn-buy" type="button" name="buyBtton">BUY</button>
+              </mdb-slide>
+            </mdb-carousel>
+        </div>
+    </div>
+  </div>
+
+</div>

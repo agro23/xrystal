@@ -1,0 +1,15 @@
+mdb-carousel {
+  height: 520px !important;
+  width: 450px !important;
+}
+
+mdb-slide {
+  height: 620px !important;
+  width: 450px !important;
+}
+
+.btn-buy {
+  margin-top: 200px;
+  margin-left: 300px;
+
+}

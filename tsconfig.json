@@ -15,6 +15,8 @@
     "lib": [
       "es2016",
       "dom"
-    ]
+    ],
+    "include": ["node_modules/angular-bootstrap-md/**/*.ts",  "src/**/*.ts"]
+
   }
 }
