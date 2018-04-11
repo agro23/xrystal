@@ -11,6 +11,7 @@ import { StoreTopComponent } from './store-top/store-top.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { MarketComponent } from './market/market.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MarketComponent } from './market/market.component';
     CrystalComponent,
     StoreTopComponent,
     PurchaseComponent,
-    MarketComponent
+    MarketComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

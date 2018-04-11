@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StoreTopComponent } from './store-top/store-top.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { MarketComponent } from './market/market.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -11,6 +12,10 @@ const appRoutes: Routes = [
     // component: StoreTopComponent
     component: MarketComponent
 
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'purchase',

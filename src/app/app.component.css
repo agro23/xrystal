@@ -1,0 +1,8 @@
+.logotype {
+  font-family: 'Montez', cursive;
+  font-size: 1.5em;
+}
+
+ul, li {
+  display: inline ;
+}
