@@ -1,0 +1,21 @@
+.grid {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+}
+.cell {
+  flex: 0 0 33%;                       /* don't grow, don't shrink, width */
+  height: 300px;
+  margin-bottom: 2px;
+  background-color: #999;
+  padding: 45px;
+
+}
+// .cell:nth-child(3n) {
+//   background-color: #F00;
+// }
+
+img {
+  width: 200px;
+  height: 200px;
+}

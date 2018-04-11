@@ -1,0 +1,15 @@
+  <p>
+    market works!
+  </p>
+  <br><br>
+  <div class="fixed-sn">
+    <div class="col-lg-10 ml-auto mr-auto">
+      <!-- <mdb-carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex" (activeSlideChange)="activeSlideChange()"> -->
+        <!-- images is an array made on the fly and passed 9 elements at a time. -->
+      <div  class="grid">
+        <!-- <mdb-slide> -->
+        <div  *ngFor="let slide of slides; let index=index" class="cell"><img (click)="purchaseMarketXrystal(slide.id)" [src]="slide.image"></div>
+      </div>
+    </div>
+      <!-- </mdb-carousel> -->
+  </div>
