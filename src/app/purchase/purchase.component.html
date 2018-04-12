@@ -5,3 +5,14 @@
 <h3>
   You just bought crystal # {{xrystalId}}!
 </h3>
+<div class="container">
+{{message}}
+  <div class="well">
+      <div id="image"><img [src]="displayXrystals[xrystalId].image"></div>
+      <div id="price"></div>
+      <div id="description"></div>
+      <div id="match"></div>
+      <button type="button" name="messageButton" (click)="newMessage('you liked ' + xrystalId)">Change Message</button>
+  </div>
+
+</div>

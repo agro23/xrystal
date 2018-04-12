@@ -5,11 +5,15 @@
         <!-- images is an array made on the fly and passed 9 elements at a time. -->
       <div  class="grid">
         <!-- <mdb-slide> -->
-        <div  *ngFor=" let slide of xrystals[whichXrystal]; let index=index;" class="cell" id="flex"><img (click)="purchaseMarketXrystal(slide.id)" [src]="slide.image"></div>
+        <!-- <div  *ngFor=" let slide of xrystals[whichXrystal]; let index=index;" class="cell" id="flex"><img (click)="purchaseMarketXrystal(slide.id)" [src]="slide.image"></div> -->
+
+        <div  *ngFor=" let slide of displayXrystals; let index=index;" class="cell" id="flex"><img (click)="purchaseMarketXrystal(slide.id)" [src]="slide.image" ></div>
+
+
       </div>
       <div class="buttons">
-        <button type="button" name="leftButton" class="btn btn-info" (click)="goLeft()"><i class="fa fa-arrow-left" style="font-size:24px"></i></button>
-        <button type="button" name="rightButton" class="btn btn-info" (click)="goRight()"><i class="fa fa-arrow-right" style="font-size:24px"></i></button>
+        <button type="button" name="leftButton" class="btn btn-info" (click)="goLeftNow()"><i class="fa fa-arrow-left" style="font-size:24px"></i></button>
+        <button type="button" name="rightButton" class="btn btn-info" (click)="goRightNow()"><i class="fa fa-arrow-right" style="font-size:24px"></i></button>
       </div>
       <!-- </mdb-carousel> -->
     </div>

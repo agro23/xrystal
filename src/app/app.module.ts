@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
+import { MessagerService } from './messager.service'; // stole this
+
 import { AppComponent } from './app.component';
 import { CrystalComponent } from './crystal/crystal.component';
 import { StoreTopComponent } from './store-top/store-top.component';
@@ -12,6 +14,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { MarketComponent } from './market/market.component';
 import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,9 @@ import { AboutComponent } from './about/about.component';
     StoreTopComponent,
     PurchaseComponent,
     MarketComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,7 @@ import { AboutComponent } from './about/about.component';
     MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [MessagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

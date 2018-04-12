@@ -1,0 +1,7 @@
+<div *ngIf ="! loggedIn">
+  <form class="form-group">
+    <input type="text" name="userName" placeholder="UserID">
+    <input type="text" name="userPass" value="" placeholder="Password">
+    <button type="button" name="submitButton" class="btn btn-warning" (click)="loginForNow()">LOGIN</button>
+  </form>
+</div>
