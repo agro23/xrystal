@@ -1,18 +1,25 @@
-<p>
+<!-- <p>
   purchase works!
-</p>
+</p> -->
 
-<h3>
+<!-- <h3>
   You just bought crystal # {{xrystalId}}!
-</h3>
+</h3> -->
 <div class="container">
-{{message}}
+<!-- {{message}} -->
   <div class="well">
-      <div id="image"><img [src]="displayXrystals[xrystalId].image"></div>
+      <!-- <div id="image"><img [src]="displayXrystals[xrystalId].image"></div> -->
+      <!-- <div id="image"><img [src]=[(message)]></div> -->
+      <div class="panel-row">
+        <div id="image"><img src={{message}}{{xrystalId}}.jpg></div>
+      <div>
       <div id="price"></div>
       <div id="description"></div>
       <div id="match"></div>
-      <button type="button" name="messageButton" (click)="newMessage('you liked ' + xrystalId)">Change Message</button>
+      <!-- <button type="button" name="messageButton" (click)="newMessage('you liked ' + xrystalId)">Change Message</button> -->
+      <div class="panel-row">
+        <button type="button" name="buyButton" class="btn btn-info" (click)="buyXrystal(xrystalId)">BUY</button>
+      </div>
   </div>
 
 </div>

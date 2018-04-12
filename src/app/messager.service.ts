@@ -4,7 +4,9 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 @Injectable()
 export class MessagerService {
 
-    private messageSource = new BehaviorSubject<string>("../assets/img/xrystal");
+    // private messageSource = new BehaviorSubject<string>("../src/assets/img/xrystal17.jpg");
+
+    private messageSource = new BehaviorSubject<string>("assets/img/xrystal");
     currentMessage = this.messageSource.asObservable();
 
   constructor() { }
