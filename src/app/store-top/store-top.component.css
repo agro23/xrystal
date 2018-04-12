@@ -8,8 +8,28 @@ mdb-slide {
   width: 450px !important;
 }
 
+#box {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 500px;
+}
+
 .btn-buy {
   margin-top: 200px;
   margin-left: 300px;
 
+}
+
+#showXrystal{
+  /*display: none;*/
+  width: 1200px;
+}
+
+#viewbox{
+  width: 600px;
+}
+
+#testviewbox{
+  width: 600px;
 }

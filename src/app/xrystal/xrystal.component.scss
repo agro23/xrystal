@@ -1,0 +1,56 @@
+@media screen and (max-width: 990px) and (min-width: 768px) {
+  #generate {
+    height: 400px !important;
+    border: solid 5px black;
+  }
+
+  #market {
+    height: 400px !important;
+    border: solid 5px black;
+  }
+
+  #visualizer {
+    height: 400px !important;
+    border: solid 5px black;
+  }
+}
+
+#holder {
+  margin-top: 100px !important;
+}
+
+.row {
+  margin: 0 auto !important;
+}
+
+#generate {
+  background-color: lightgray;
+  height: 650px;
+  border: solid 5px gray;
+  margin: 15px !important;
+  font-size: 2em;
+  text-align: center;
+}
+
+#market {
+  background-color: lightgray;
+  height: 650px;
+  border: solid 5px black;
+  margin: 15px !important;
+  font-size: 2em;
+  text-align: center;
+}
+
+#visualizer {
+  background-color: lightgray;
+  height: 650px;
+  border: solid 5px black;
+  margin: 15px !important;
+  font-size: 2em;
+  text-align: center;
+}
+
+#space {
+  height: 650px;
+  width: 25px;
+}

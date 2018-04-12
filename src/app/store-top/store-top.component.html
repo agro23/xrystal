@@ -24,22 +24,63 @@
     <!-- </mdb-carousel> -->
     <!--/.Carousel Wrapper -->
 
-
+<!--
     <div class="fixed-sn">
         <div class="col-lg-10 ml-auto mr-auto">
             <mdb-carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex" (activeSlideChange)="activeSlideChange()">
               <mdb-slide *ngFor="let slide of slides; let index=index">
-                <img [src]="slide.image">
+                <img [src]="slide.image"> -->
                 <!-- <div class="carousel-caption">
                   <h4>Slide {{index}}</h4>
                   <p>{{slide.text}}</p>
-                </div> --><br>
+                </div> -->
+                <!-- <br>
                 <button (click)="purchaseXrystal(slide.id)" class="btn btn-info btn-buy" type="button" name="buyBtton">BUY</button>
               </mdb-slide>
             </mdb-carousel>
         </div>
+    </div> -->
+
+    <div class="container">
+
+        <div *ngIf="myToggle" class="row" id="showXrystal"  (click)="purchaseXrystal()">
+            <!-- <div class="col-md-2" *ngFor="let crystalSkin of this.crystalSkins; let i = index"> -->
+            <div *ngFor="let crystalSkin of this.crystalSkins; let i = index" id="box">
+
+            <svg viewBox="0 0 100 100" id="viewBox">
+              <svg *ngFor="let color of crystalSkin.colors[0]; let j = index">
+                <svg:rect [attr.x]="j*10" [attr.y]="20" [attr.width]="5" [attr.height]="5" [attr.fill]="color"/>
+              </svg>
+                <svg:polygon [attr.points]="crystalSkin.points" x="40" y="40" [ngStyle]="{'fill': crystalSkin.colors[0][0]}"/>
+                <svg:polygon [attr.points]="crystalSkin.points.slice(0,8)" x="40" y="40" [ngStyle]="{'fill': crystalSkin.colors[0][1]}"/>
+                <svg:polygon [attr.points]="crystalSkin.points.slice(34,8)" x="40" y="40" [ngStyle]="{'fill': crystalSkin.colors[1][0]}"/>
+              </svg>
+
+              <span *ngFor="let color of crystalSkin.colors[0]; let j = index">
+                <p>{{color}}</p>
+                <p></p>
+              </span>
+
+              <span *ngFor="let color of crystalSkin.colors[1]; let j = index">
+                <p>{{color}}</p>
+                <p></p>
+              </span>
+              <span *ngFor="let point of crystalSkin.points; let j = index">
+                <p>{{point}}</p>
+                <p></p>
+              </span>
+            </div>
+        </div>
+        <div class="row">
+          <button type="button" name="generateButton" (click)="generateXrystal()">GENERATE</button>
+        </div>
+        <br>
+        <div class="row">
+          <button type="button" name="purchaseButton" (click)="purchaseXrystal()">PURCHASE</button>
+        </div>
     </div>
-    
+
+
 
   </div>
 

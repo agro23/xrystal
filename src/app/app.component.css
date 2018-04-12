@@ -6,3 +6,7 @@
 ul, li {
   display: inline ;
 }
+
+#top {
+  width: 1600px !important;
+}

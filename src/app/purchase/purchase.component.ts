@@ -36,7 +36,7 @@ export class PurchaseComponent implements OnInit {
   }
 
   buyXrystal(boughtXrystal){
-
+    alert("congratualtions! You just bought crystal # " + boughtXrystal);
   }
 
 }

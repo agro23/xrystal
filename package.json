@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "aframe": "^0.8.1",
     "angular-bootstrap-md": "^5.2.3",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.1.0",

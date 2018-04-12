@@ -6,7 +6,7 @@ export class MessagerService {
 
     // private messageSource = new BehaviorSubject<string>("../src/assets/img/xrystal17.jpg");
 
-    private messageSource = new BehaviorSubject<string>("assets/img/xrystal");
+    private messageSource = new BehaviorSubject<string>("assets/img/crystal"); // this is the file name & prefix
     currentMessage = this.messageSource.asObservable();
 
   constructor() { }

@@ -1,0 +1,63 @@
+
+<div class="container" (click)="goBackToTop()">
+
+  <div id="ourVisualizer">
+    <a-scene embedded>
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+       -->
+       <!-- <a-sky color='black'></a-sky> -->
+<a-light type="ambient" intensity="0.7" color="#ffffff"></a-light>
+      <a-light intensity="3" color="#00ffff" position="-5.72 6.65 0.80" animation__color="property:color; dir:alternate; dur:2000; easing:easeInOutSine; loop:true; to:#ff0000" alongpath="path:10,10,-10 -20,10,-10 10,0,-10; closed:true; dur:12000"></a-light>
+      <a-light intensity="5" color="#ff0000" position="8.60 6.65 0.80" animation__color="property:color; dir:alternate; dur:2000; easing:easeInOutSine; loop:true; to:#0000ff" alongpath="path:-2,-2,5 2,-1,5 0,-1,5; closed:true; dur:3000;"></a-light>
+<a-gltf-model src="../assets/models/XRYSTAL.gltf" position="-3 0 -3 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL2.gltf" position="-3 0 -5 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL3.gltf" position="-3 0 -7 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL13.gltf" position="-3 0 -9 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    <a-gltf-model src="../assets/models/XRYSTAL17.gltf" position="-3 0 -11 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    <a-gltf-model src="../assets/models/XRYSTAL21.gltf" position="-3 0 -13 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    <a-gltf-model src="../assets/models/XRYSTAL25.gltf" position="-3 0 -15 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL30.gltf" position="-3 0 -17 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL33.gltf" position="-3 0 -19 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL4.gltf" position="0 0 -3 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL5.gltf" position="0 0 -5 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL6.gltf" position="0 0 -7 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+   <a-gltf-model src="../assets/models/XRYSTAL14.gltf" position="0 0 -9 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+     <a-gltf-model src="../assets/models/XRYSTAL18.gltf" position="0 0 -9 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+     <a-gltf-model src="../assets/models/XRYSTAL22.gltf" position="0 0 -11 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+     <a-gltf-model src="../assets/models/XRYSTAL26.gltf" position="0 0 -15 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL31.gltf" position="0 0 -17 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL36.gltf" position="0 0 -19 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL7.gltf" position="3 0 -3 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL8.gltf" position="3 0 -5 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL9.gltf" position="3 0 -7 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    <a-gltf-model src="../assets/models/XRYSTAL15.gltf" position="3 0 -9 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    <a-gltf-model src="../assets/models/XRYSTAL23.gltf" position="3 0 -11 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL19.gltf" position="3 0 -9 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL27.gltf" position="3 0 -13 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL29.gltf" position="3 0 -15 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL31.gltf" position="3 0 -17 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL35.gltf" position="3 0 -19 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL10.gltf" position="6 0 -3 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL11.gltf" position="6 0 -5 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL12.gltf" position="6 0 -7 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    <a-gltf-model src="../assets/models/XRYSTAL16.gltf" position="6 0 -9 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL20.gltf" position="6 0 -11 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL24.gltf" position="6 0 -13 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL28.gltf" position="6 0 -15 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL32.gltf" position="6 0 -17 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL34.gltf" position="6 0 -19 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+ <a-gltf-model src="../assets/models/XRYSTAL35.gltf" position="-3 0 0 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+  <a-gltf-model src="../assets/models/XRYSTAL36.gltf" position="0 0 0 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    <a-gltf-model src="../assets/models/XRYSTAL37.gltf" position="3 0 0 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL38.gltf" position="-3 0 2 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL39.gltf" position="0 0 2 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL40.gltf" position="3 0 2 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL41.gltf" position="6 0 2 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL42.gltf" position="0 0 4 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+      <a-gltf-model src="../assets/models/XRYSTAL38.gltf" position="0 0 6 -3" rotation="0 45 0" scale=".5 .5 .5 .5" ></a-gltf-model>
+    </a-scene>
+  </div>
+</div>

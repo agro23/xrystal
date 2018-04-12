@@ -7,11 +7,13 @@ import { MarketComponent } from './market/market.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { XrystalComponent } from './xrystal/xrystal.component';
+import { VisualizerComponent } from './visualizer/visualizer.component';
 
 
 const appRoutes: Routes = [
   {
-    path: '',
+    path: 'market',
     // component: StoreTopComponent
     component: MarketComponent
 
@@ -39,7 +41,15 @@ const appRoutes: Routes = [
   {
     path: 'store-top',
     component: StoreTopComponent
-  }
+  },
+  {
+    path: '',
+    component: XrystalComponent
+  },
+  {
+    path: 'visualizer',
+    component: VisualizerComponent
+  },
 
 ];
 
